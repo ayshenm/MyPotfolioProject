@@ -7,7 +7,7 @@
 
 <br>	
 
-  <a href="https://kitty-ruddy.vercel.app/"><strong> 📺 Live</strong></a> 
+  <a href="https://my-potfolio-project-ayshenms-projects.vercel.app/"><strong> 📺 Live</strong></a> 
 
 </div>
 
