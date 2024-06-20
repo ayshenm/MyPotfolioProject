@@ -31,9 +31,9 @@ const HeroWrapper = () => {
             <div className="h2"></div>
             <TypeAnimation
               sequence={[
-                "I'am Ayisha Mirza Frontend Developer",
+                "I'm Ayisha Mirza Frontend Developer",
                 1000,
-                "I'am Ayisha Mirza Programmer",
+                "I'm Ayisha Mirza Programmer",
                 1000,
               ]}
               wrapper="span"
