@@ -9,7 +9,7 @@ const Socials = () => {
         return (
           <div key={socialMediaLink.id}>
             <a href={socialMediaLink.path} target="_blank" rel="noreferrer">
-              {socialMediaLink.icon}
+             
             </a>
           </div>
         );
