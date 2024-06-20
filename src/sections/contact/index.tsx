@@ -13,7 +13,7 @@ import { varSlide } from "@/lib/variants";
 import Image from "next/image";
 import { toast } from "sonner";
 
-import ContactImg from "@/public/contact.svg";
+import ContactImg from "@/src/assets/svg/contact.svg";
 
 const Contact = () => {
   const { register, isFormValid } = useForm({
@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container flex items-center mb-10">
+    <section id="contact" className="container flex items-center mb-10 z-[1000000000000000000]">
       <MotionViewport className="w-[40%] hidden lg:block" variants={varSlide("right")}>
         <div className="w-full">
           <Image className="rounded w-96" src={ContactImg} alt="" />
@@ -54,7 +54,7 @@ const Contact = () => {
             Let&#39;s make something great together!
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4  ">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 z-50">
             <Input placeholder="Name" {...register("name")} />
 
             <Input placeholder="Email" type="email" {...register("email")} />

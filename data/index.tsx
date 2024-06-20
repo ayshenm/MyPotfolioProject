@@ -14,31 +14,27 @@ import html from "@/src/assets/svg/html.svg";
 import css from "@/src/assets/svg/css.svg";
 import tailwind from "@/src/assets/svg/tailwind.svg";
 import mui from "@/src/assets/svg/mui.svg";
+import ac from "@/src/assets/images/ac.webp";
 import motion from "@/src/assets/svg/framer-motion.svg";
 import js from "@/src/assets/svg/js.svg";
 import ts from "@/src/assets/svg/ts.svg";
 import react from "@/src/assets/svg/react.svg";
 import next from "@/src/assets/svg/nextjs.svg";
 import redux from "@/src/assets/svg/redux.svg";
-import swr from "@/src/assets/svg/swr.svg";
-import tanstack from "@/src/assets/svg/tanstack.svg";
 import bootstrap from "@/src/assets/svg/bootstrap.png";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
+import angelInvestor from "@/src/assets/project/angel.png"
+import kitty from "@/src/assets/project/kitty.png"
+import volti from "@/src/assets/project/volti.png"
+import portfolio from "@/public/photohead.png"
+import netflix from "@/src/assets/project/netflix.png"
+import animenu from "@/src/assets/project/animation-menu.png"
+import fitness from "@/src/assets/project/fitness.png"
+import drop from "@/src/assets/project/image-click.png"
+import calc from "@/src/assets/project/calc.png"
+import vumes from "@/src/assets/project/vumes.png"
 
-
-// tools
-// import github from "@/assets/svg/github.svg";
-
-// import trello from "@/assets/svg/trello.svg";
-
-// projects
-// import jubee from "@/assets/images/jubee.png";
-// import rahatbina from "@/assets/images/rahatbina.jpg";
-// import dashboard from "@/assets/images/dashboard.webp";
-// import blog from "@/assets/images/blog.jpg";
-// import ecommerce from "@/assets/images/e-commerce.jpg";
-// import facebook from "@/assets/images/facebook.png";
 
 // -------------------------------------------------------------------------------------
 
@@ -80,60 +76,15 @@ export const socialMediaLinks = [
   },
 ];
 
-// -------------------------------------------------------------------------------------
-export const gridItems = [
-  {
-    id: 1,
-    title: "",
-    description: "",
-    className: "p-3 lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "",
-    spareImg: "",
-  },
-
-  // {
-  //   id: 4,
-  //   title: "Tech enthusiast with a passion for development.",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //   imgClassName: "",
-  //   titleClassName: "justify-start",
-  //   img: "/grid.svg",
-  //   spareImg: "/b4.svg",
-  // },
-
-  // {
-  //   id: 5,
-  //   title: "Currently building a JS Animation library",
-  //   description: "The Inside Scoop",
-  //   className: "md:col-span-3 md:row-span-2",
-  //   imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-  //   titleClassName: "justify-center md:justify-start lg:justify-center",
-  //   img: "/b5.svg",
-  //   spareImg: "/grid.svg",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Do you want to start a project together?",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-  //   imgClassName: "",
-  //   titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-  //   img: "",
-  //   spareImg: "",
-  // },
-];
-
-
 export const experienceData = [
   {
     id: 1,
     title: "Frontend Developer",
     location: "Azerbaijan, Sumgait city",
     description: [
-      "Lease of assignments given on the project", "Creating new modules", "Optimization control",
+      "Lease of assignments given on the project",
+      "Creating new modules",
+      "Optimization control",
     ],
     date: "2022- 2023",
   },
@@ -142,7 +93,9 @@ export const experienceData = [
     title: "Frontend Developer",
     location: "Freelancer - Baku, Azerbaijan",
     description: [
-      "Lease of assignments given on the project", "Creating new modules", "Optimization control",
+      "Lease of assignments given on the project",
+      "Creating new modules",
+      "Optimization control",
     ],
     date: "2023- created",
   },
@@ -152,7 +105,7 @@ export const experienceData = [
 
 export const educationData = [
   {
-    id:1,
+    id: 1,
     location: "Div Academy Course",
     title: "Frontend Developer",
     date: "2023 - 2024",
@@ -169,8 +122,6 @@ export const educationData = [
     title: "Computer Networks and Calculation Techniques",
     date: "2015 - 2018",
   },
-  
-  
 ];
 
 // -------------------------------------------------------------------------------------
@@ -178,108 +129,149 @@ export const educationData = [
 export const projects = [
   {
     id: 1,
-    title: "Angel Investor",
+    title: "My Potfolio Website",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
-    img: "/p1.svg",
-    iconLists: ["html", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://ayshenm.github.io/InvestorCourse.github.io/",
+    img: portfolio,
+    iconLists: ["next js", "react js","typescript", "tailwind css", "Aceternity ui", "frame motion"],
+    link: "https://my-potfolio-project-ayshenms-projects.vercel.app/",
   },
   {
     id: 2,
-    title: "Kitty Zoo Shop",
+    title: "Netflix cover",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
-    img: "/p1.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://kitty-ruddy.vercel.app/",
+    img: netflix,
+    iconLists: ["next js", "react js", "tailwind css","prisma","mongo db","hero icon"],
+    link: "https://netflix-phi-sandy.vercel.app/",
   },
   {
     id: 3,
-    title: "Volti-Electic Bike",
+    title: "Kitty Zoo Shop",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://volti-seven.vercel.app/",
+    img: kitty,
+    iconLists: ["htmt", "css", "javascript"],
+    link: "https://kitty-ruddy.vercel.app/",
   },
   {
     id: 4,
-    title: "Netflix cover",
+    title: "Volti-Electic Bike",
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
-    img: "/p1.svg",
-    iconLists: ["/app.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://netflix-phi-sandy.vercel.app/",
+    img: volti,
+    iconLists: ["htmt", "css", "javascript"],
+    link: "https://volti-seven.vercel.app/",
   },
-   
+  {
+    id: 5,
+    title: "Angel Investor",
+    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    img: angelInvestor,
+    iconLists: ["htmt", "css", "bootstrap", "javascript"],
+    link: "https://ayshenm.github.io/InvestorCourse.github.io/",
+  },
+  {
+    id: 6,
+    title: "Vumes Website",
+    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    img: vumes,
+    iconLists: ["htmt", "css", "tailwind css", "javascript"],
+    link: "https://ayshenm.github.io/VumesWebsitee-github.io/"
+  },
+  {
+    id: 7,
+    title: "Fitness Website",
+    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    img: fitness,
+    iconLists: ["htmt", "css", "bootstrap"],
+    link: "https://ayshenm.github.io/FitnessTemplate.github.io/",
+  },
+  {
+    id: 8,
+    title: "Calculator",
+    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    img: calc,
+    iconLists: ["htmt", "css",  "javascript"],
+    link: "https://ayshenm.github.io/Calculator.github.io/",
+  },
+  {
+    id: 9,
+    title: "Image Task",
+    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    img: drop,
+    iconLists: ["react js", "bootstrap" ],
+    link: "https://ayshenm.github.io/ImageCloseOpen.github.io/ ",
+  },
+  {
+    id: 10,
+    title: "Animation Menu",
+    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    img: animenu,
+    iconLists: ["htmt", "css",  "javascript"],
+    link: "https://animations-menu-github-io.vercel.app/",
+  },
+  
 ];
-
 
 // -------------------------------------------------------------------------------------
 
 export const skillsData = [
-      {
-        id: 1,
-        title: "HTML",
-        icon: html,
-      },
-      {
-        id: 2,
-        title: "CSS",
-        icon: css,
-      },
-      {
-        id: 3,
-        title: "JavaScript",
-        icon: js,
-      },
-      {
-        id: 4,
-        title: "TypeScript",
-        icon: ts,
-      },
-      {
-        id: 5,
-        title: "React JS",
-        icon: react,
-      },
-      {
-        id: 6,
-        title: "Next JS",
-        icon: next,
-      },
-      {
-        id: 7,
-        title: "Tailwind CSS",
-        icon: tailwind,
-      },
-      {
-        id: 8,
-        title: "Bootstrap Css",
-        icon: bootstrap,
-      },
-      {
-        id: 9,
-        title: "Material UI",
-        icon: mui,
-      },
-      {
-        id: 10,
-        title: "Shadcn UI",
-        icon: mui,
-      },
+  {
+    id: 1,
+    title: "HTML",
+    icon: html,
+  },
+  {
+    id: 2,
+    title: "CSS",
+    icon: css,
+  },
+  {
+    id: 3,
+    title: "JavaScript",
+    icon: js,
+  },
+  {
+    id: 4,
+    title: "TypeScript",
+    icon: ts,
+  },
+  {
+    id: 5,
+    title: "React JS",
+    icon: react,
+  },
+  {
+    id: 6,
+    title: "Next JS",
+    icon: next,
+  },
+  {
+    id: 7,
+    title: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    id: 8,
+    title: "Bootstrap Css",
+    icon: bootstrap,
+  },
+  {
+    id: 9,
+    title: "Aceternity UI",
+    icon: ac,
+  },
+  {
+    id: 10,
+    title: "Shadcn UI",
+    icon: ac,
+  },
 
-      {
-        id: 11,
-        title: "Redux Toolkit",
-        icon: redux,
-      },
-      {
-        id: 12,
-        title: "Framer Motion",
-        icon: motion,
-      },
-     
-     
-    ];
-
-  
-    
-  
+  {
+    id: 11,
+    title: "Redux Toolkit",
+    icon: redux,
+  },
+  {
+    id: 12,
+    title: "Framer Motion",
+    icon: motion,
+  },
+];

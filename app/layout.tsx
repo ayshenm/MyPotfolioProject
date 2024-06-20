@@ -4,7 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/app/provider";
 import StarsCanvas from "@/components/StarsCanvas";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,15 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <StarsCanvas />
-          {children}
+      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <StarsCanvas />
+        <div className="z-50">
+        {children}
+        </div>
+        
         </ThemeProvider>
       </body>
     </html>

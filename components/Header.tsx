@@ -1,56 +1,46 @@
 "use client";
-// import { useTheme } from "@/components/contexts/ThemeProvider";
-// import { Button } from "@/components/ui/button";
-import { CodeXml, Menu, Moon, Sun } from "lucide-react";
-import { navLinks } from "@/data";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useState } from "react";
-import NavLink from "@/components/Navbar";
-import { IoCodeOutline, IoCodeSlash } from "react-icons/io5";
+import { Menu } from "lucide-react";
+import { IoCodeSlash } from "react-icons/io5";
 import Link from "next/link";
+import { navLinks } from "@/data";
+import NavLink from "@/components/Navbar";
 
 const Header = () => {
-  // const { theme, toggleTheme } = useTheme();
-  const matches = useMediaQuery("(min-width: 1024px)");
   const [showMenu, setShowMenu] = useState(false);
 
   return (
     <header className="container z-50 relative min-h-20 py-6">
       <nav className="flex justify-between items-center relative">
-        {!matches ? (
-          <button onClick={() => setShowMenu(!showMenu)}>
-            <Menu />
-          </button>
-        ) : (
-          <>
-            <Link className="cursor-pointer" href="/">
-              <IoCodeSlash className="text-3xl" />
-            </Link>
+        {/* Logo and Menu Button */}
+        <Link className="cursor-pointer" href="/">
+          <IoCodeSlash className="text-3xl" />
+        </Link>
 
-            <ul className="flex gap-x-12">
-              {navLinks.map((navLink) => {
-                return <NavLink key={navLink.id} navLink={navLink} />;
-              })}
-            </ul>
-          </>
-        )}
+        <button onClick={() => setShowMenu(!showMenu)} className="lg:hidden">
+          <Menu />
+        </button>
 
+        {/* Navigation Links for Large Screens */}
+        <ul className="hidden lg:flex gap-x-12">
+          {navLinks.map((navLink) => (
+            <NavLink key={navLink.id} navLink={navLink} />
+          ))}
+        </ul>
+
+        {/* Theme Toggle Button */}
         <div className="flex">
-          {/* <button onClick={toggleTheme}>
-            {theme === "dark" ? <Moon color="white" /> : <Sun />}
-          </button> */}
+          {/* Theme toggle logic goes here */}
         </div>
 
+        {/* Mobile Menu */}
         {showMenu && (
-          <div className="absolute top-14 border border-white-100 w-full p-3 rounded-sm lg:hidden">
+          <div className="absolute top-14 left-0 w-full bg-white p-3 rounded-sm lg:hidden">
             <nav>
-              <Link className="cursor-pointer" href="/">
-                <IoCodeSlash className="text-3xl" />
-              </Link>
-              <ul className="flex-center gap-x-12 ">
-                {navLinks.map((navLink) => {
-                  return <NavLink key={navLink.id} navLink={navLink} />;
-                })}
+              <ul className="flex flex-col items-center gap-y-4">
+                {navLinks.map((navLink) => (
+                  <NavLink key={navLink.id} navLink={navLink} />
+                ))}
               </ul>
             </nav>
           </div>

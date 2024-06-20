@@ -8,9 +8,11 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import MagicButton from "../../../../components/MagicButton";
 import Link from "next/link";
 import Image from "next/image";
-import Photo from "@/public/ay.jpeg";
+import Photo from "@/src/assets/images/ay.jpeg";
 import MotionViewport from "@/components/animation/motion-viewport";
 import { varSlide } from "@/lib/variants";
+import GradientButton from "@/components/ui/gradient-button";
+import { Flame } from "lucide-react";
 
 const HeroWrapper = () => {
   return (
@@ -46,8 +48,8 @@ const HeroWrapper = () => {
             <br /> I love my job and enjoy what I do
           </p>
 
-          <div className="flex gap-x-3 mb-6">
-            <a href="#portfolio">
+          <div className="flex gap-x-3 mb-6 -z-[100000]">
+            <a className="cursor-pointer z-50" href="#portfolio">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow className="text-lg" />}

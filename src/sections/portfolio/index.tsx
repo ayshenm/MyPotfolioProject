@@ -13,20 +13,15 @@ import Title from "@/components/ui/Title";
 
 const Project = () => {
   return (
-    <MotionViewport variants={varSlide("left")} className="flex-1 w-full">
-      <div id="portfolio" className="py-20">
-        <Title className="w-[28rem] ml-auto mr-auto mb-20">Portfolio</Title>
+    <MotionViewport variants={varSlide("left")} className="flex-1 w-full relative z-[1000]">
+      <div id="portfolio" className="py-20 z-[1000] relative">
+        <Title className="w-[28rem] ml-auto mr-auto mb-20 z-[1000]">Portfolio</Title>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <MotionViewport variants={varSlide("left")}
-              key={project.id}
-              // variants={varSlide("down", {
-              //   delay: index * 0.1,
-              // })}
-            >
-              <CardContainer className="inter-var">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-background dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border">
+            <MotionViewport variants={varSlide("left")} key={project.id} className="relative z-[1000]">
+              <CardContainer className="!z-[1000]">
+                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-background dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border z-[1000]">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white">
@@ -61,7 +56,7 @@ const Project = () => {
                   </CardItem>
 
                   <a
-                    className="flex justify-end cursor-pointer w-full h-full px-4 py-5 rounded-xl text-foregorund text-xs font-bold  float-left"
+                    className="flex justify-end cursor-pointer w-full h-full px-4 py-5 rounded-xl text-foreground text-xs font-bold float-left"
                     href={project.link}
                     target="_blank">
                     Demo <Tv className="h-4 w-4 ml-1" />
