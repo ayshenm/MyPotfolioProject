@@ -9,7 +9,6 @@ import MagicButton from "../../../../components/MagicButton";
 import Link from "next/link";
 import Image from "next/image";
 import Photo from "@/public/ay.jpeg";
-import Socials from "./socials";
 import MotionViewport from "@/components/animation/motion-viewport";
 import { varSlide } from "@/lib/variants";
 
@@ -46,8 +45,6 @@ const HeroWrapper = () => {
             Frontend web developer, I create web pages with UI/UX user interface,
             <br /> I love my job and enjoy what I do
           </p>
-
-        
 
           <div className="flex gap-x-3 mb-6">
             <a href="#portfolio">
@@ -89,7 +86,6 @@ const HeroWrapper = () => {
                     "
             />
           </div>
-          <Socials />
         </MotionViewport>
       </div>
     </section>
