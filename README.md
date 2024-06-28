@@ -1,6 +1,6 @@
 
 <div align="center">
-
+<bold>The project is in the preparation phase, with love...😊</bold>
   <h1 align="center">My Portfolio Website</h1>
 
   Next js is my website I developed with React Typescript <br /> 
