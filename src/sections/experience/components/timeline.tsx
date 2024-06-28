@@ -16,7 +16,7 @@ interface IProps {
 
 const Timeline: FC<IProps> = ({ data }) => {
   return (
-    <VerticalTimeline className="bg-green-700">
+    <VerticalTimeline>
       {data.map((item) => {
         return (
           <VerticalTimelineElement
@@ -33,13 +33,11 @@ const Timeline: FC<IProps> = ({ data }) => {
             }}
             date={item.date}
             iconStyle={{
-              background: "#030637",
-              color: "#30637",
+              background: "var(--primary)",
+              color:"#030637",
               width: 20,
               height: 20,
               marginLeft: "-10px",
-              zIndex:"100",
-              padding:"10px"
             }}
             // eslint-disable-next-line react/jsx-no-undef
             icon={item.type === "experience" ? <FaBriefcase /> : <FaGraduationCap />}

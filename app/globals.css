@@ -91,20 +91,25 @@
   .flex-center-col {
     @apply flex flex-col items-center justify-center;
   }
-  .home_img{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 9px rgba(10, 21, 148, 0.3);
-    order: 1;
-    justify-self: center;
-    width: 300px;
-    height: 300px;
+  .home_img {
+    @apply w-[300px] h-[300px] bg-center bg-no-repeat bg-cover order-1 justify-self-center;
+    @apply shadow-[inset_0_0_0_9px_rgba(10,21,148,0.3)];
     animation: profile_animate 8s ease-in-out infinite 1s;
-    border:5px solid #030637;
-   }
+    @apply border-[5px_solid_#030637];
+  }
 }
 
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
 /* animations */
 
 @keyframes movingbackground {
@@ -127,16 +132,15 @@
   }
 }
 
-
-@keyframes profile_animate{
-  0%{
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
-  50%{
-      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
   }
-  100%{
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
 

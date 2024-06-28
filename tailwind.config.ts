@@ -83,6 +83,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        
         meteor: {
           "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
           "70%": { opacity: "1" },
@@ -91,6 +92,7 @@ const config = {
             opacity: "0",
           },
         },
+        
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
