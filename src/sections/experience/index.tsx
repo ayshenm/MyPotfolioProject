@@ -29,7 +29,7 @@ const Experience = () => {
       <div className="px-5 lg:custom-px relative">
         <div
           className={cn(
-            "flex justify-center relative border mx-auto w-[16rem] py-3 px-2 border-primary rounded-xl gap-x-4 lg:gap-x-10 mb-20  after:bg-cyan-500/10 after:block after:absolute after:top-[7px] after:translate-x-0 after:left-2 after:w-[40%] after:h-[70%] after:rounded-xl after:z-10 after:transition-transform after:duration-300",
+            "flex justify-center relative border mx-auto w-[16rem] py-3 px-2 border-primary rounded-xl gap-x-4 lg:gap-x-10 mb-20  after:bg-cyan-500/10 after:block after:absolute after:top-[7px] after:translate-x-0 after:left-2 after:w-[40%] after:h-[70%] after:rounded-xl after:z-10 after:transition-transform after:duration-300 bg-green-800",
             {
               " after:translate-x-[96%] after:w-[46%]": active === "education",
             }

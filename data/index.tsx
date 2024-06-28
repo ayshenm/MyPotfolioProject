@@ -14,7 +14,7 @@ import html from "@/src/assets/svg/html.svg";
 import css from "@/src/assets/svg/css.svg";
 import tailwind from "@/src/assets/svg/tailwind.svg";
 import mui from "@/src/assets/svg/mui.svg";
-import ac from "@/src/assets/images/ac.webp";
+import ac from "@/src/assets/svg/mui.svg";
 import motion from "@/src/assets/svg/framer-motion.svg";
 import js from "@/src/assets/svg/js.svg";
 import ts from "@/src/assets/svg/ts.svg";
@@ -87,6 +87,7 @@ export const experienceData = [
       "Optimization control",
     ],
     date: "2022- 2023",
+    type: "experience"
   },
   {
     id: 2,
@@ -98,6 +99,7 @@ export const experienceData = [
       "Optimization control",
     ],
     date: "2023- created",
+    type: "experience"
   },
 ];
 
@@ -109,18 +111,21 @@ export const educationData = [
     location: "Div Academy Course",
     title: "Frontend Developer",
     date: "2023 - 2024",
+    type:"education"
   },
   {
     id: 2,
     location: "Sumgait State University",
     title: "Computer engineer",
     date: "2021 - 2026",
+    type:"education"
   },
   {
     id: 3,
     location: "Baku State College of Communication and Transport",
     title: "Computer Networks and Calculation Techniques",
     date: "2015 - 2018",
+    type:"education"
   },
 ];
 
@@ -255,7 +260,7 @@ export const skillsData = [
   },
   {
     id: 9,
-    title: "Aceternity UI",
+    title: "Material UI",
     icon: ac,
   },
   {

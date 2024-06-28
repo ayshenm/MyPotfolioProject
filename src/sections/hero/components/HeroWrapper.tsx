@@ -77,16 +77,9 @@ const HeroWrapper = () => {
                 w-[250px] h-[250px]
                 lg:w-[400px] lg:h-[400px]
                 ">
-            <Image
-              alt=""
-              src={Photo}
-              width={370}
-              height={370}
-              className="absolute transform 
-                    -translate-x-1/2  -translate-y-1/2 top-1/2 left-1/2 rounded-full
-                    w-[220px] h-[220px]  lg:w-[370px] lg:h-[370px]
-                    "
-            />
+            <div className="absolute inset-0 animate-profile_animate home_img">
+              <Image src={Photo} alt="" layout="fill" objectFit="cover" className=" home_img " />
+            </div>
           </div>
         </MotionViewport>
       </div>

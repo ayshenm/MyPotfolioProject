@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { FaBriefcase, FaGraduationCap } from "react-icons/fa6";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -9,12 +10,13 @@ interface IProps {
     location: string;
     date: string;
     description?: Array<string>;
+    type: any;
   }[];
 }
 
 const Timeline: FC<IProps> = ({ data }) => {
   return (
-    <VerticalTimeline>
+    <VerticalTimeline className="bg-green-700">
       {data.map((item) => {
         return (
           <VerticalTimelineElement
@@ -31,13 +33,17 @@ const Timeline: FC<IProps> = ({ data }) => {
             }}
             date={item.date}
             iconStyle={{
-              background: "var(--primary)",
-              color: "#fff",
+              background: "#030637",
+              color: "#30637",
               width: 20,
               height: 20,
               marginLeft: "-10px",
+              zIndex:"100",
+              padding:"10px"
             }}
-            icon={<></>}>
+            // eslint-disable-next-line react/jsx-no-undef
+            icon={item.type === "experience" ? <FaBriefcase /> : <FaGraduationCap />}
+            >
             <h3 className="vertical-timeline-element-title font-light mb-1">{item.title}</h3>
 
             <h4 className="vertical-timeline-element-subtitle font-semibold text-card-foreground mb-3">

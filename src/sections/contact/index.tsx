@@ -37,14 +37,14 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container flex items-center mb-10 z-[1000000000000000000]">
+    <section id="contact" className="container flex items-center mb-10 !z-[10]">
       <MotionViewport className="w-[40%] hidden lg:block" variants={varSlide("right")}>
         <div className="w-full">
           <Image className="rounded w-96" src={ContactImg} alt="" />
         </div>
       </MotionViewport>           
 
-      <MotionViewport className="w-full lg:w-1/2" variants={varSlide("left")}>
+      <MotionViewport className="w-full lg:w-1/2 z-50" variants={varSlide("left")}>
         <div className="w-full">
           <Title className="mb-4 text-right" textureClassName="ml-auto translate-x-14">
             Get in touch
@@ -54,7 +54,7 @@ const Contact = () => {
             Let&#39;s make something great together!
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 z-50">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 !z-[100]">
             <Input placeholder="Name" {...register("name")} />
 
             <Input placeholder="Email" type="email" {...register("email")} />
