@@ -92,10 +92,9 @@
     @apply flex flex-col items-center justify-center;
   }
   .home_img {
-    @apply w-[300px] h-[300px] bg-center bg-no-repeat bg-cover order-1 justify-self-center;
+    @apply bg-center bg-no-repeat bg-cover;
     @apply shadow-[inset_0_0_0_9px_rgba(10,21,148,0.3)];
     animation: profile_animate 8s ease-in-out infinite 1s;
-    @apply border-[5px_solid_#030637];
   }
 }
 

@@ -10,28 +10,24 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <header className="container z-50 relative min-h-20 py-6">
-      <nav className="flex justify-between items-center relative">
+    <header className="flex justify-between z-50 relative min-h-20 py-6">
+      <nav className="flex justify-between items-center relative  w-full ">
         {/* Logo and Menu Button */}
-        <Link className="cursor-pointer" href="/">
-          <IoCodeSlash className="text-3xl" />
-        </Link>
+        <div className="flex justify-between ">
+          <Link className="cursor-pointer" href="/">
+            <IoCodeSlash className="text-3xl" />
+          </Link>
 
-        <button onClick={() => setShowMenu(!showMenu)} className="lg:hidden">
-          <Menu />
-        </button>
-
-        {/* Navigation Links for Large Screens */}
-        <ul className="hidden lg:flex gap-x-12">
-          {navLinks.map((navLink) => (
-            <NavLink key={navLink.id} navLink={navLink} />
-          ))}
-        </ul>
-
-        {/* Theme Toggle Button */}
-        <div className="flex">
-          {/* Theme toggle logic goes here */}
+          
         </div>
+        <div>
+          <ul className="hidden lg:flex gap-x-12">
+            {navLinks.map((navLink) => (
+              <NavLink key={navLink.id} navLink={navLink} />
+            ))}
+          </ul>
+        </div>
+        {/* Navigation Links for Large Screens */}
 
         {/* Mobile Menu */}
         {showMenu && (
@@ -45,6 +41,9 @@ const Header = () => {
             </nav>
           </div>
         )}
+        <button onClick={() => setShowMenu(!showMenu)} className="lg:hidden">
+            <Menu />
+          </button>
       </nav>
     </header>
   );
