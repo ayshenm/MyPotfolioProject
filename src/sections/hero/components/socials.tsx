@@ -2,7 +2,7 @@ import { socialMediaLinks } from "@/data";
 
 const Socials = () => {
   return (
-    <ul className="flex gap-x-2">
+    <ul className="flex gap-x-2 z-50">
       {socialMediaLinks.map((socialMediaLink) => {
         const SocialMediaIcon = socialMediaLink.icon;
         return (
