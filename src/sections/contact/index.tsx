@@ -65,7 +65,7 @@ const Contact = () => {
               {...register("message")}
             />
 
-            <Button type="submit" className="col-span-2" disabled={isLoading || !isFormValid}>
+            <Button type="submit" className="col-span-2 z-50 " disabled={isLoading || !isFormValid}>
               {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               Send It <Send className="ml-2 w-4 h-4" />
             </Button>

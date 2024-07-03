@@ -14,14 +14,17 @@ import Title from "@/components/ui/Title";
 const Project = () => {
   return (
     <MotionViewport variants={varSlide("left")} className="flex-1 w-full relative z-[1000]">
-      <div id="portfolio" className="py-20 z-[1000] relative">
+      <div id="portfolio" className="py-10 z-[1000] relative">
         <Title className="w-[28rem] ml-auto mr-auto mb-20 z-[1000]">Portfolio</Title>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <MotionViewport variants={varSlide("left")} key={project.id} className="relative z-[1000]">
+            <MotionViewport
+              variants={varSlide("left")}
+              key={project.id}
+              className="relative z-[1000]">
               <CardContainer className="!z-[1000]">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-background dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border z-[1000]">
+                <CardBody className="shadow-md shadow-indigo-500/50 bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-background dark:border-white/[0.2] border-black/[0.1] h-auto rounded-xl p-6 border z-[1000]">
                   <CardItem
                     translateZ="50"
                     className="text-xl font-bold text-neutral-600 dark:text-white">

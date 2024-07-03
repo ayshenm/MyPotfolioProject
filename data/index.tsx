@@ -15,6 +15,7 @@ import css from "@/src/assets/svg/css.svg";
 import tailwind from "@/src/assets/svg/tailwind.svg";
 import mui from "@/src/assets/svg/mui.svg";
 import ac from "@/src/assets/svg/mui.svg";
+import shadcn from "@/src/assets/svg/shadcn.png";
 import motion from "@/src/assets/svg/framer-motion.svg";
 import js from "@/src/assets/svg/js.svg";
 import ts from "@/src/assets/svg/ts.svg";
@@ -266,7 +267,7 @@ export const skillsData = [
   {
     id: 10,
     title: "Shadcn UI",
-    icon: ac,
+    icon: shadcn,
   },
 
   {

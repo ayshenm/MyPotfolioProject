@@ -15,7 +15,7 @@ const Skills = () => {
       <Title className="w-[28rem] ml-auto mr-auto mb-20">Skills</Title>
 
       <section>
-        <div className="overflow-hidden flex  shadow-lg shadow-indigo-500/50  justify-between relative p-4 sm:p-10 rounded-3xl">
+        <div className="overflow-hidden flex flex-col md:flex-row  shadow-lg shadow-indigo-500/50  justify-between relative p-4 sm:p-10 rounded-3xl">
           <div>
             <Image width={400} src={skillImg} alt="" />
           </div>
@@ -23,10 +23,11 @@ const Skills = () => {
             {skillsData.map((skill) => (
               <div key={skill.id} className="flex gap-x-2 border rounded-md shadow-lg p-3">
                 <Image width={24} height={24} src={skill.icon} alt="" />
-                {skill.title}
+                <span className="hidden md:block">{skill.title}</span>
               </div>
             ))}
           </div>
+
         </div>
       </section>
     </MotionViewport>
