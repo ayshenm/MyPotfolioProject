@@ -11,7 +11,7 @@ import { BackgroundGradient } from "@/components/ui/background-gradient";
 import skillImg from "@/src/assets/svg/mainIcons.svg";
 const Skills = () => {
   return (
-    <MotionViewport variants={varSlide("right")} className="container mb-28">
+    <MotionViewport variants={varSlide("left")} className="container mb-28">
       <Title className="w-[28rem] ml-auto mr-auto mb-20">Skills</Title>
 
       <section>

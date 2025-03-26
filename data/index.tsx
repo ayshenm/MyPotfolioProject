@@ -35,6 +35,7 @@ import fitness from "@/src/assets/project/fitness.png"
 import drop from "@/src/assets/project/image-click.png"
 import calc from "@/src/assets/project/calc.png"
 import vumes from "@/src/assets/project/vumes.png"
+import quick from "@/src/assets/project/quick.jpeg"
 
 
 // -------------------------------------------------------------------------------------
@@ -136,15 +137,23 @@ export const projects = [
   {
     id: 1,
     title: "My Potfolio Website",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    des: "My Portfolio",
     img: portfolio,
     iconLists: ["next js", "react js","typescript", "tailwind css", "Aceternity ui", "frame motion"],
     link: "https://my-potfolio-project-ayshenms-projects.vercel.app/",
   },
   {
+    id: 11,
+    title: "Quick Journey",
+    des: "Travel Holiday Website",
+    img: quick,
+    iconLists: ["next js", "react js","typescript", "tailwind css", "Shadcn ui","react-hook","zod"],
+    link: "https://quick-journey-k4g8u7vw7-ayshenms-projects.vercel.app/",
+  },
+  {
     id: 2,
-    title: "Netflix cover",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    title: "Netflix",
+    des: "Netflix cover",
     img: netflix,
     iconLists: ["next js", "react js", "tailwind css","prisma","mongo db","hero icon"],
     link: "https://netflix-phi-sandy.vercel.app/",
@@ -152,7 +161,7 @@ export const projects = [
   {
     id: 3,
     title: "Kitty Zoo Shop",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    des: "ZooShop",
     img: kitty,
     iconLists: ["htmt", "css", "javascript"],
     link: "https://kitty-ruddy.vercel.app/",
@@ -160,7 +169,7 @@ export const projects = [
   {
     id: 4,
     title: "Volti-Electic Bike",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    des: "Electric eco Bike",
     img: volti,
     iconLists: ["htmt", "css", "javascript"],
     link: "https://volti-seven.vercel.app/",
@@ -168,7 +177,7 @@ export const projects = [
   {
     id: 5,
     title: "Angel Investor",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    des: "Mələk İnvestor",
     img: angelInvestor,
     iconLists: ["htmt", "css", "bootstrap", "javascript"],
     link: "https://ayshenm.github.io/InvestorCourse.github.io/",
@@ -176,7 +185,7 @@ export const projects = [
   {
     id: 6,
     title: "Vumes Website",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    des: "Vumes website",
     img: vumes,
     iconLists: ["htmt", "css", "tailwind css", "javascript"],
     link: "https://ayshenm.github.io/VumesWebsitee-github.io/"
@@ -184,7 +193,7 @@ export const projects = [
   {
     id: 7,
     title: "Fitness Website",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia",
+    des: "Fitness",
     img: fitness,
     iconLists: ["htmt", "css", "bootstrap"],
     link: "https://ayshenm.github.io/FitnessTemplate.github.io/",

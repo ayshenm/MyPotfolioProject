@@ -67,7 +67,7 @@ export const TextRevealCard = ({
       <div className="h-40 relative flex items-center overflow-hidden">
         <motion.div
           style={{
-            width: "100%",
+            width: "",
           }}
           animate={
             isMouseOver
