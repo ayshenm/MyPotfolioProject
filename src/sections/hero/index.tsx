@@ -77,7 +77,7 @@ const Hero = () => {
                   position="right"
                 />
               </a>
-              <a className="z-50" href="/Mirzayeva Ayshen.pdf" download="cv">
+              <a className="z-50" href="/Ayshen Mirzeyeva.pdf" download="cv">
                 <MagicButton
                   title="Download CV"
                   icon={<MdOutlineFileDownload className="text-lg" />}

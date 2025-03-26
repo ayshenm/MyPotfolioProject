@@ -14,7 +14,7 @@ const About = () => {
       </Title>
 
       <div className="flex flex-col justify-center gap-y-8 lg:flex-row lg:gap-x-8">
-        <MotionViewport variants={varSlide("right")} className="w-full lg:w-[500px]">
+        <MotionViewport variants={varSlide("left")} className="w-full lg:w-[500px]">
           <div className="mt-5 md:mt-0">
             <div className="relative rounded-full bg-gradient-to-bl w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
               <div className="absolute inset-0 animate-profile_animate home_img">
