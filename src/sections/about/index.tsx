@@ -16,7 +16,7 @@ const About = () => {
       <div className="flex flex-col justify-center gap-y-8 lg:flex-row lg:gap-x-8">
         <MotionViewport variants={varSlide("left")} className="w-full lg:w-[500px]">
           <div className="flex justify-center items-center p-4">
-            <div className="relative rounded-full sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 xl:w-96 xl:h-96 max-w-full">
+            <div className="relative rounded-full sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 max-w-full">
               <div className="!w-60 !h-40">
                 <Image
                   src={AboutImg}
@@ -36,7 +36,7 @@ const About = () => {
               Welcome to my portfolio website. My name is Ayisha Mirza. I am a Frontend developer.
             </p>
 
-            <p className="italic">
+            <p className="italic text-center md:!text-right">
               I am a passionate frontend developer with a strong foundation in HTML, CSS, and
               JavaScript, specializing in modern web technologies. I have hands-on experience
               working with frameworks such as React, Next.js, and Vite, along with state management
