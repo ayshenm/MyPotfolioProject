@@ -9,7 +9,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <section id="about" className="container relative mt-10 p-4 lg:p-10">
-      <Title className="mb-20" textureClassName="ml-20 lg:w-[30rem]">
+      <Title className="mb-20 text-start" textureClassName="">
         About me
       </Title>
 
@@ -17,7 +17,7 @@ const About = () => {
         <MotionViewport variants={varSlide("left")} className="w-full lg:w-[500px]">
           <div className="flex justify-center items-center p-4">
             <div className="relative rounded-full sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 max-w-full">
-              <div className="!w-60 !h-40">
+              <div className="!w-80 !h-80">
                 <Image
                   src={AboutImg}
                   alt="About Image"
@@ -36,7 +36,7 @@ const About = () => {
               Welcome to my portfolio website. My name is Ayisha Mirza. I am a Frontend developer.
             </p>
 
-            <p className="italic text-center md:!text-right">
+            <p className="italic text-center sm:!text-right">
               I am a passionate frontend developer with a strong foundation in HTML, CSS, and
               JavaScript, specializing in modern web technologies. I have hands-on experience
               working with frameworks such as React, Next.js, and Vite, along with state management

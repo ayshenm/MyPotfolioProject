@@ -13,9 +13,9 @@ import Title from "@/components/ui/Title";
 
 const Project = () => {
   return (
-    <MotionViewport variants={varSlide("left")} className="flex-1 w-full relative z-[1000]">
-      <div id="portfolio" className="py-10 z-[1000] relative">
-        <Title className="w-[28rem] ml-auto mr-auto mb-20 z-[1000]">Portfolio</Title>
+    <MotionViewport variants={varSlide("left")} className="flex-1 w-full relative z-[1000] md:mb-28">
+      <div id="portfolio" className="z-[1000] relative">
+        <Title className="w-[28rem] ml-auto mr-auto mb-28 z-[1000]">Portfolio</Title>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (

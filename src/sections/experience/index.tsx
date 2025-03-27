@@ -23,8 +23,8 @@ const Experience = () => {
   const [active, setActive] = useState<string>("experience");
 
   return (
-    <MotionViewport variants={varSlide("left")} className="container mb-28">
-     <Title className="w-[28rem] ml-auto mr-auto mb-20">Experience</Title>
+    <MotionViewport variants={varSlide("left")} className="container mt-28">
+     <Title className="w-[28rem] mb-28 text-end">Experience</Title>
 
       <div className="px-5 lg:custom-px relative">
         <div

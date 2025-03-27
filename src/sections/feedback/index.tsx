@@ -8,8 +8,8 @@ import Title from "@/components/ui/Title";
 const Feedback = () => {
   return (
     <>
-      <MotionViewport className="w-full lg:w-1/2" variants={varSlide("left")}>
-      <Title className="w-[28rem] ml-auto mr-auto mb-20">FeedBack</Title>
+      <MotionViewport className="w-full lg:w-1/2 mt-28 mb-28" variants={varSlide("left")}>
+      <Title className="w-[28rem] text-start">FeedBack</Title>
       </MotionViewport>
 
       <div className="rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">

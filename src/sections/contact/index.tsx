@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container flex items-center mb-10 !z-[10]">
+    <section id="contact" className="flex items-center !z-[10] mt-28">
       <MotionViewport className="w-[40%] hidden lg:block" variants={varSlide("right")}>
         <div className="w-full">
           <Image className="rounded w-96" src={ContactImg} alt="" />
@@ -54,7 +54,7 @@ const Contact = () => {
             Let&#39;s make something great together!
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 !z-[100]">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 !z-[100] mt-10">
             <Input placeholder="Name" {...register("name")} />
 
             <Input placeholder="Email" type="email" {...register("email")} />
