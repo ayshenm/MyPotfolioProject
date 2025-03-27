@@ -42,7 +42,7 @@ const Contact = () => {
         <div className="w-full">
           <Image className="rounded w-96" src={ContactImg} alt="" />
         </div>
-      </MotionViewport>           
+      </MotionViewport>
 
       <MotionViewport className="w-full lg:w-1/2 z-50" variants={varSlide("left")}>
         <div className="w-full">
@@ -54,7 +54,7 @@ const Contact = () => {
             Let&#39;s make something great together!
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 !z-[100] mt-10">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4 !z-[100] mt-10 mb-20">
             <Input placeholder="Name" {...register("name")} />
 
             <Input placeholder="Email" type="email" {...register("email")} />
